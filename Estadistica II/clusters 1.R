@@ -122,3 +122,4 @@ aggregate(datos,by=list(kmedias$cluster),FUN=mean)
 datos_cluster_kmedias<-data.frame(datos,kmedias$cluster)
 datos_cluster_kmedias
 #
+

@@ -33,8 +33,6 @@ coef_aglomeracion
 
 
 #Regla de la mayoía
-
-
 res = NbClust(datos,distance = "euclidean", min.nc = 4, max.nc = 7,method = "ward.D",index="alllong")
 res
 
@@ -78,3 +76,4 @@ g2
 
 plot_grid(g1,g2,ncol =2)
 help("cowplot")
+
