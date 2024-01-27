@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juez 2</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <!-- Agrega la biblioteca Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; /* Cambiado a columna para alinear verticalmente */
+      height: 100vh;
+      margin: 0;
+      background-color: #222; /* Fondo oscuro */
+      color: #fff; /* Texto blanco */
+    }
+
+    h1 {
+      margin-bottom: 20px; /* Espacio entre el título y los botones */
+    }
+
+    .button-container {
+      text-align: center;
+      width: 100%; /* Ancho del contenedor al 100% */
+      max-width: 300px; /* Ancho máximo para que se vea bien en dispositivos móviles */
+      margin: 0 auto; /* Centra el contenedor */
+    }
+
+    button {
+      font-size: 2em; /* Tamaño de fuente más grande */
+      margin: 10px; /* Mayor espacio entre botones */
+      width: 100%; /* Ancho al 100% del contenedor */
+      height: 4rem; /* Altura de los botones */
+    }
+
+    .judge-icons {
+      font-size: 3em; /* Tamaño de fuente más grande para los íconos de los jueces */
+      margin-top: 20px; /* Espacio entre el temporizador y los íconos */
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .circle-icon {
+      font-size: 3em; /* Tamaño de fuente más grande para los íconos de los jueces */
+      border-radius: 50%;
+      width: 70px; /* Tamaño más grande para los íconos de los jueces */
+      height: 70px; /* Tamaño más grande para los íconos de los jueces */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .valid-icon, .invalid-icon {
+      background-color: #ff0000; /* Relleno de color rojo */
+      color: #fff; /* Color del icono (blanco) */
+    }
+
+    h2 {
+      color: #fff; /* Color del texto blanco */
+    }
+
+    .btn {
+      background-color: #333; /* Color de fondo de los botones oscuro */
+      color: #fff; /* Color del texto de los botones blanco */
+      border: 1px solid #fff; /* Borde blanco */
+      height: 4rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Juez : Mauricio Herrera </h1>
+<h3>Competidor : Braikan Piña</h3>
+<div class="button-container">
+
+    
+  <button id="iniciar" class="btn btn-primary">Valido</button>
+  <button id="detener" class="btn btn-warning" onclick="showAlert('Nulo amarillo')">Nulo Amarillo</button>
+  <button id="reiniciar" class="btn btn-danger" onclick="showAlert('Nulo Rojo')">Nulo Rojo</button>
+</div>
+
+<script>
+  function showAlert(message) {
+    // Utiliza la función de alerta de Bootstrap para mostrar un mensaje
+    alert(message);
+  }
+</script>
+
+</body>
+</html>

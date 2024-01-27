@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temporizador de un minuto</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <!-- Agrega la biblioteca Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; /* Cambiado a columna para alinear verticalmente */
+      height: 100vh;
+      margin: 0;
+      background-color: #222; /* Fondo oscuro */
+      color: #fff; /* Texto blanco */
+    }
+
+    #temporizador {
+      font-size: 15em;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 30px;
+    }
+
+    button {
+      font-size: 1.5em;
+      margin: 5px;
+    }
+
+    .button-container {
+      text-align: center;
+    }
+
+    .judge-icons {
+      font-size: 2em;
+      margin-top: 20px; /* Espacio entre el temporizador y los íconos */
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .circle-icon {
+      font-size: 2em;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .valid-icon, .invalid-icon {
+      background-color: #ff0000; /* Relleno de color rojo */
+      color: #fff; /* Color del icono (blanco) */
+    }
+
+    h2 {
+      color: #fff; /* Color del texto blanco */
+    }
+
+    .btn {
+      background-color: #333; /* Color de fondo de los botones oscuro */
+      color: #fff; /* Color del texto de los botones blanco */
+      border: 1px solid #fff; /* Borde blanco */
+    }
+  </style>
+</head>
+<body>
+  <h2>Competidor : Braikan Andres Piña Salcedo.</h2>
+  <h2>Class: Junior - 59 KG.</h3>
+  <h3>Movimiento: Sentadilla</h3>
+  <h3>Peso :  160 KG. </h3>
+  <button id="detener" class="btn btn-primary">Siguiente</button>
+<div id="temporizador">1:00</div>
+
+<div class="button-container">
+  <button id="iniciar" class="btn btn-primary">Iniciar</button>
+  <button id="detener" class="btn btn-secondary">Detener</button>
+  <button id="reiniciar" class="btn btn-danger">Reiniciar</button>
+
+</div>
+
+<!-- Agrega íconos para representar la validez o nulidad de los movimientos -->
+<div class="judge-icons">
+  <div class="circle-icon valid-icon"><i class="far fa-circle"></i></div>
+  <div class="circle-icon valid-icon"><i class="far fa-circle"></i></div>
+  <div class="circle-icon valid-icon"><i class="far fa-circle"></i></div>
+</div>
+
+<script src="../../js/temporizador.js"></script>
+
+</body>
+</html>
